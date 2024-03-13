@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="sv">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <link
+         rel="stylesheet"
+         href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+      <title>Bootstrap - Meny</title>
+   </head>
+   <body>
+      <!-- HEADER WITH NAV -->
+      <header class="d-flex justify-content-center bc-green mb-5">
+         <!-- fluid gör så att diven är 100% at all times -->
+         <div class="container-fluid">
+            <!-- Navbar som ändras till en hamburgermeny(toggler) när sidan blir mindre än 992px, dvs breakingpoint large  -->
+            <nav class="navbar navbar-expand-lg navbar-fill fs-4">
+               <div class="container-fluid justify-content-between">
+                  <!-- När menyn blir en hamburgermeny så döljs företagets logotyp helt och istället läggs namnet till vänster i headern 
+                  och hamburgermenyn till höger-->
+                  <a href="/index.html" class="text-decoration-none">
+                     <!-- d-ld-none står för display large (992px) none vilket gör att när skärmen är över 992px så visas inte förtetagsnamnet -->
+                     <h5
+                        class="p-3 text-white text-uppercase d-lg-none d-flex justify-content-center">
+                        Green Food
+                     </h5></a
+                  >
+                  <!-- Hamburgermenyn som är en knapp -->
+                  <button
+                     class="navbar-toggler navbar-dark border"
+                     type="button"
+                     data-bs-toggle="collapse"
+                     data-bs-target="#navbarNavDropdown"
+                     aria-controls="navbarNavDropdown"
+                     aria-expanded="false"
+                     aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon navbar-dark"></span>
+                  </button>
+                  <!-- Menyn är uppdelad i två delar med logotypen i mitten -->
+                  <div
+                     class="collapse navbar-collapse justify-content-center"
+                     id="navbarNavDropdown">
+                     <ul
+                        class="navbar-nav align-items-center nav nav-underline">
+                        <!-- Alla menyalternativen är i stora bokstäver -->
+                        <li class="nav-item text-uppercase">
+                           <a
+                              class="nav-link text-white font-heading"
+                              aria-current="page"
+                              href="/index.html"
+                              >Hem</a
+                           >
+                        </li>
+                        <li class="nav-item text-uppercase">
+                           <a class="nav-link text-white font-heading" href="#"
+                              >Boka Bord</a
+                           >
+                        </li>
+
+                        <li>
+                           <a
+                              class="navbar-brand m-3 justify-content-center d-none d-lg-block"
+                              href="/index.html">
+                              <!-- bilden har rundade kanter samt 2 i marginal om sig -->
+                              <img
+                                 class="rounded-circle m-2"
+                                 src="/images/logo.webp"
+                                 alt="Logo"
+                                 style="width: 100px" />
+                              <h5 class="mt-2 text-white text-uppercase">
+                                 Green Food
+                              </h5></a
+                           >
+                        </li>
+                        <li class="nav-item text-uppercase">
+                           <a
+                              class="nav-link text-white font-heading"
+                              href="/alacarte.html"
+                              >Meny</a
+                           >
+                        </li>
+                        <!-- Nedan följer manyalternativet som är dropdown samt alternativen i dess undermeny -->
+                        <li class="nav-item dropdown text-uppercase">
+                           <a
+                              class="nav-link dropdown-toggle text-white font-heading"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              Mer info
+                           </a>
+                           <ul class="dropdown-menu fs-4">
+                              <li>
+                                 <a
+                                    class="dropdown-item font-heading text-uppercase"
+                                    href="#"
+                                    >Event</a
+                                 >
+                              </li>
+                              <li>
+                                 <a
+                                    class="dropdown-item font-heading text-uppercase"
+                                    href="/about_us.html"
+                                    >Om Oss
+                                 </a>
+                              </li>
+                              <li>
+                                 <a
+                                    class="dropdown-item font-heading text-uppercase"
+                                    href="/contact.html"
+                                    >Kontakt</a
+                                 >
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <!-- MAIN SECTION -->
+      <main class="p-3">
+         <div class="container bg-beige">
+            <div class="row align-items-center">
+               <!-- förrätter -->
+               <div
+                  class="col order-2 order-md-1 col-12 col-md-6 p-4 p-md-2 my-xl-5 d-flex justify-content-center">
+                  <img
+                     src="/images/meny1.webp"
+                     alt="Måltid upplagd på fat"
+                     class="img-fluid" />
+               </div>
+
+               <div
+                  class="col order-1 order-md-2d-flex flex-column align-items-center">
+                  <div
+                     class="container d-flex flex-column align-items-center mb-3">
+                     <h2 class="mb-1 mt-3">Förrätter</h2>
+                     <img src="/images/underline-starter.svg" alt=" " />
+
+                     <div
+                        class="container d-flex flex-column align-items-center m-4">
+                        <h6 class="text-uppercase mb-0">Svampsoppa</h6>
+                        <p class="mb-0">
+                           Stekt svamp, krutonger, krasse samt creme fraiche med
+                           smak av timjan
+                        </p>
+                        <h6 class="mb-0">99 kr</h6>
+                     </div>
+
+                     <div
+                        class="container d-flex flex-column align-items-center m-4">
+                        <h6 class="text-uppercase mb-0">Råbiff</h6>
+                        <p class="mb-0">
+                           Bakad äggula, sotad majonnäs, friterad kapris, inlagd
+                           rödlök på råbiff från Ovikensgården
+                        </p>
+                        <h6 class="mb-0">99 kr</h6>
+                     </div>
+
+                     <div
+                        class="container d-flex flex-column align-items-center m-4">
+                        <h6 class="text-uppercase mb-0">Sotad Flundra</h6>
+                        <p class="mb-0">
+                           Wasabikräm, soja- och citrusmajonäs, sjögrässallad,
+                           nori samt grillad flundra
+                        </p>
+                        <h6 class="mb-0">99 kr</h6>
+                     </div>
+
+                     <div
+                        class="container d-flex flex-column align-items-center m-4">
+                        <h6 class="text-uppercase mb-0">Jordärtskocka</h6>
+                        <p class="mb-0">
+                           Sikrom eller tångrom, rökt gräddfil, machésallad samt
+                           syltat äpple
+                        </p>
+                        <h6 class="mb-0">89 kr</h6>
+                     </div>
+
+                     <div
+                        class="container d-flex flex-column align-items-center m-4">
+                        <h6 class="text-uppercase mb-0">
+                           Halstrad Pilgrimsmussla
+                        </h6>
+                        <p class="mb-0">
+                           Jordärtskockspuré, forellrom, hackad gurka samt
+                           syrade jordgubbar
+                        </p>
+                        <h6 class="mb-0">120 kr</h6>
+                     </div>
+
+                     <p class="mt-4 mb-0">
+                        <small
+                           >Alla rätter går att få veganska, glutenfria och
+                           allergianpassade.</small
+                        >
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!-- Ett streck som delar av texterna på mindre skärmär när bilderna döljs -->
+            <hr class="d-md-none mt-0" />
+
+            <div class="row align-items-center">
+               <!-- varmrätter -->
+
+               <div
+                  class="col col-12 col-md-6 p-4 p-md-2 flex-column align-items-center">
+                  <div
+                     class="container d-flex flex-column align-items-center mb-3">
+                     <h2 class="mb-1">Varmrätter</h2>
+                     <img src="/images/underline-starter.svg" alt=" " />
+
+                     <div
+                        class="container d-flex flex-column align-items-center m-4">
+                        <h6 class="text-uppercase mb-0">Svampsoppa</h6>
+                        <p class="mb-0">
+                           Stekt svamp, krutonger, krasse samt creme fraiche med
+                           smak av timjan
+                        </p>
+                        <h6 class="mb-0">135 kr</h6>
+                     </div>
+
+                     <div
+                        class="container d-flex flex-column align-items-center m-4">
+                        <h6 class="text-uppercase mb-0">Råbiff</h6>
+                        <p class="mb-0">
+                           Bakad äggula, sotad majonnäs, friterad kapris, inlagd
+                           rödlök på råbiff från Ovikensgården
+                        </p>
+                        <h6 class="mb-0">155 kr</h6>
+                     </div>
+
+                     <div
+                        class="container d-flex flex-column align-items-center m-4">
+                        <h6 class="text-uppercase mb-0">Davids pasta Rosa</h6>
+                        <p class="mb-0">
+                           Wasabikräm på färskost, citrustapioca, sjögrässallad
+                           samt Davids rödbetspasta
+                        </p>
+                        <h6 class="mb-0">155 kr</h6>
+                     </div>
+
+                     <div
+                        class="container d-flex flex-column align-items-center m-4">
+                        <h6 class="text-uppercase mb-0">Jordärtskocka</h6>
+                        <p class="mb-0">
+                           Sikrom eller tångrom, rökt gräddfil, machésallad samt
+                           syltat äpple
+                        </p>
+                        <h6 class="mb-0">55 kr</h6>
+                     </div>
+
+                     <div
+                        class="container d-flex flex-column align-items-center m-4">
+                        <h6 class="text-uppercase mb-0">
+                           Halstrad Pilgrimsmussla
+                        </h6>
+                        <p class="mb-0">
+                           Jordärtskockspuré, forellrom, hackad gurka samt
+                           syrade jordgubbar
+                        </p>
+                        <h6 class="mb-0">145 kr</h6>
+                     </div>
+                     <p class="mt-4 mb-0">
+                        <small
+                           >Alla rätter går att få veganska, glutenfria och
+                           allergianpassade.</small
+                        >
+                     </p>
+                  </div>
+               </div>
+               <div class="col my-xl-5 d-flex justify-content-center">
+                  <img
+                     src="/images/meny2.webp"
+                     alt="Måltid upplagd på fat"
+                     class="img-fluid" />
+               </div>
+            </div>
+
+            <!-- Ett streck som delar av texterna på mindre skärmär när bilderna döljs -->
+            <hr class="d-md-none mt-0" />
+
+            <div class="row align-items-center">
+               <!-- efterrätter -->
+               <div
+                  class="col order-2 order-md-1 my-xl-5 col-12 col-md-6 p-4 p-md-2 d-flex justify-content-center">
+                  <img
+                     src="/images/meny3.webp"
+                     alt="Efterrätt bestående av kaka med grädde och färska bär"
+                     class="img-fluid" />
+               </div>
+
+               <div
+                  class="col order-1 order-md-2 d-flex flex-column align-items-center">
+                  <div
+                     class="container d-flex flex-column align-items-center mb-3">
+                     <h2 class="mb-1">Efterrätter</h2>
+                     <img src="/images/underline-starter.svg" alt=" " />
+
+                     <div
+                        class="container d-flex flex-column align-items-center m-4">
+                        <h6 class="text-uppercase mb-0">Åkerbärsparfait</h6>
+                        <p class="mb-0">
+                           Havrecrunch, åkerbärsgodis, krossad maräng samt
+                           blåbärssås
+                        </p>
+                        <h6 class="mb-0">125 kr</h6>
+                     </div>
+
+                     <div
+                        class="container d-flex flex-column align-items-center m-4">
+                        <h6 class="text-uppercase mb-0">Glace au flour</h6>
+                        <p class="mb-0">
+                           Sockerkaka, blåbärsmaräng samt hemmagjord chokladsås
+                        </p>
+                        <h6 class="mb-0">120 kr</h6>
+                     </div>
+
+                     <div
+                        class="container d-flex flex-column align-items-center m-4">
+                        <h6 class="text-uppercase mb-0">Pavlova</h6>
+                        <p class="mb-0">
+                           Maräng med grädde och säsongens frukter och bär
+                        </p>
+                        <h6 class="mb-0">135 kr</h6>
+                     </div>
+
+                     <div
+                        class="container d-flex flex-column align-items-center m-4">
+                        <h6 class="text-uppercase mb-0">Sorbet</h6>
+                        <p class="mb-0">
+                           Saras sorbet, för veckans smak fråga servitören!
+                        </p>
+                        <h6 class="mb-0">99 kr</h6>
+                     </div>
+
+                     <div
+                        class="container d-flex flex-column align-items-center m-4">
+                        <h6 class="text-uppercase mb-0">Vackans extra</h6>
+                        <p class="mb-0">
+                           Kökets egna. För att få veta veckans extra fråga
+                           servitören!
+                        </p>
+                        <h6 class="mb-0">99 kr</h6>
+                     </div>
+
+                     <p class="mt-4 mb-0">
+                        <small
+                           >Alla rätter går att få veganska, glutenfria och
+                           allergianpassade.</small
+                        >
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Mellanrum mellan menyer med info samt knapp som går till kontakt-sidan -->
+         <div class="container d-flex flex-column p-4">
+            <p class="text-center mb-0">
+               Anmäl gärna era allergier eller kostpreferenser innan ert besök
+               eller i samband med bokning.
+            </p>
+            <p class="text-center mb-0">Våra kontaktuppgifter hittar ni här:</p>
+
+            <a
+               href="/contact.html"
+               class="knapp btn btn-secondary btn-lg w-lg-25 mx-auto">
+               Kontakt
+            </a>
+         </div>
+
+         <!-- dryckesmeny -->
+         <div class="container bg-beige">
+            <div class="row align-items-center">
+               <div
+                  class="col col-12 col-md-6 d-flex flex-column align-items-center">
+                  <h2 class="my-1 mt-3">Dryckesmeny</h2>
+                  <img
+                     src="/images/underline-starter.svg"
+                     class="mb-3"
+                     alt=" " />
+
+                  <div class="col container d-flex flex-column mb-3">
+                     <h5 class="">Vita viner</h5>
+
+                     <!-- För att vin-namnen och priserna ska hamna på samma rad så lägger jag dessa i en egen rad pch använder flexbox  -->
+                     <div class="col d-flex justify-content-between mb-0">
+                        <h6>Höga Kustens Vita</h6>
+                        <h6>115kr / 545kr</h6>
+                     </div>
+                     <p>Moldavien - Chardonnay</p>
+
+                     <div class="col d-flex justify-content-between mb-0">
+                        <h6>Chanson Chablis</h6>
+                        <h6>189kr / 895kr</h6>
+                     </div>
+                     <p>Frankrike - Chardonnay</p>
+
+                     <div class="col d-flex justify-content-between mb-0">
+                        <h6>Steininger Grüner Veltliner</h6>
+                        <h6>115kr / 625kr</h6>
+                     </div>
+                     <p>Österrike - Grüner Veltliner</p>
+
+                     <div class="col d-flex justify-content-between mb-0">
+                        <h6>Le Versant Chardonnay</h6>
+                        <h6>135kr / 625kr</h6>
+                     </div>
+                     <p class="mt-0">Frankrike - Chardonnay</p>
+                  </div>
+
+                  <div class="col container d-flex flex-column mb-3">
+                     <h5 class="">Röda viner</h5>
+
+                     <div class="col d-flex justify-content-between mb-0">
+                        <h6>Höga Kustens Röda</h6>
+                        <h6>115kr / 545kr</h6>
+                     </div>
+                     <p>Moldavien - Merlot</p>
+
+                     <div class="col d-flex justify-content-between mb-0">
+                        <h6>Vigneti del Sole Superio</h6>
+                        <h6>189kr / 895kr</h6>
+                     </div>
+                     <p>Italien - Corvina, Rondinella & Negrara</p>
+
+                     <div class="col d-flex justify-content-between mb-0">
+                        <h6>Via Nostrum Minervois</h6>
+                        <h6>115kr / 625kr</h6>
+                     </div>
+                     <p>Frankrike - Grenache & Syrah</p>
+
+                     <div class="col d-flex justify-content-between mb-0">
+                        <h6>Musar Jeune</h6>
+                        <h6>135kr / 625kr</h6>
+                     </div>
+                     <p class="mt-0">(Naturvin) Frankrike - Chardonnay</p>
+
+                     <p class="mt-4 mb-0">
+                        <small
+                           >Vårt vinutbud påverkas av säsong. Alla viner är
+                           importerade direkt ifrån vingårdarna.
+                        </small>
+                     </p>
+                  </div>
+               </div>
+               <div class="col my-xl-5 d-flex justify-content-center">
+                  <img
+                     src="/images/drink1.jpg"
+                     alt="Flaska som häller upp rödvin i ett vinglas"
+                     class="img-fluid" />
+               </div>
+            </div>
+         </div>
+
+         <div class="container bg-beige">
+            <div class="row align-items-center">
+               <div
+                  class="col order-2 order-md-1 my-xl-5 p-4 p-md-2 d-flex justify-content-center">
+                  <img
+                     src="/images/drink2.jpg"
+                     alt="Gin och tonic stylat i ett glas med gurka och lime"
+                     class="img-fluid" />
+               </div>
+               <div
+                  class="col order-1 order-md-1 col-12 col-md-6 d-flex flex-column align-items-center">
+                  <div class="col container d-flex flex-column mb-3">
+                     <h5 class="mt-3">Mousserande</h5>
+
+                     <div class="col d-flex justify-content-between mb-0">
+                        <h6>Höga Kustens Vita</h6>
+                        <h6>115kr / 545kr</h6>
+                     </div>
+                     <p>Moldavien - Chardonnay</p>
+
+                     <div class="col d-flex justify-content-between mb-0">
+                        <h6>Chanson Chablis</h6>
+                        <h6>189kr / 895kr</h6>
+                     </div>
+                     <p>Frankrike - Chardonnay</p>
+
+                     <div class="col d-flex justify-content-between mb-0">
+                        <h6>Steininger Grüner Veltliner</h6>
+                        <h6>115kr / 625kr</h6>
+                     </div>
+                     <p>Österrike - Grüner Veltliner</p>
+
+                     <div class="col d-flex justify-content-between mb-0">
+                        <h6>Le Versant Chardonnay</h6>
+                        <h6>135kr / 625kr</h6>
+                     </div>
+                     <p class="mt-0">Frankrike - Chardonnay</p>
+                  </div>
+
+                  <div class="col container d-flex flex-column mb-3">
+                     <h5 class="">Öl</h5>
+
+                     <div class="col d-flex justify-content-between mb-0">
+                        <h6>Höga Kustens Röda</h6>
+                        <h6>115kr / 545kr</h6>
+                     </div>
+                     <p>Moldavien - Merlot</p>
+
+                     <div class="col d-flex justify-content-between mb-0">
+                        <h6>Vigneti del Sole Superio</h6>
+                        <h6>189kr / 895kr</h6>
+                     </div>
+                     <p>Italien - Corvina, Rondinella & Negrara</p>
+
+                     <div class="col d-flex justify-content-between mb-0">
+                        <h6>Via Nostrum Minervois</h6>
+                        <h6>115kr / 625kr</h6>
+                     </div>
+                     <p>Frankrike - Grenache & Syrah</p>
+
+                     <div class="col d-flex justify-content-between mb-0">
+                        <h6>Musar Jeune</h6>
+                        <h6>135kr / 625kr</h6>
+                     </div>
+                     <p class="mt-0">(Naturvin) Frankrike - Chardonnay</p>
+
+                     <p class="mt-4 mb-0">
+                        <small
+                           >Vårt vinutbud påverkas av säsong. Alla viner är
+                           importerade direkt ifrån vingårdarna.
+                        </small>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer
+         class="container-fluid mt-5 bg-light pt-5 pb-4 d-flex align-self-center">
+         <div class="row flex-fill">
+            <!-- col 1 -->
+            <div
+               class="col-sm-3 col-md-4 d-flex flex-column align-items-center mb-4">
+               <h5 class="text-uppercase">
+                  <a
+                     class="link-opacity-50-hover link-dark text-decoration-none"
+                     href="#"
+                     >Kontakt</a
+                  >
+               </h5>
+               <div class="align-items-center">
+                  <!-- För skärmar mindre än 576px(breakingpoint small) så döljs adressen för att minska
+                sidans längd samt scrollningen för mindre skärmar -->
+                  <address class="d-none d-sm-block">
+                     <p class="mb-0">Green Food</p>
+                     <p class="mb-0">Storgatan 007</p>
+                     <p class="mb-0">876 54</p>
+                     <p>Staden</p>
+                  </address>
+                  <address>
+                     <a href="#">info@greenfood.se</a>
+                  </address>
+                  <address><a href="#"> 007-007 07 07</a></address>
+               </div>
+            </div>
+            <!-- col 2 -->
+            <div
+               class="col-sm-3 col-md-4 d-flex flex-column align-items-center mb-4">
+               <h5 class="text-uppercase d-none d-sm-block">Följ Oss</h5>
+               <div class="col">
+                  <a href="">
+                     <img src="/images/Instagramlogo.svg" alt="Instagram"
+                  /></a>
+                  <a href="">
+                     <img src="/images/Facebooklogo.svg" alt="Facebook" />
+                  </a>
+               </div>
+            </div>
+            <!-- col 3 -->
+            <div
+               class="col-sm-6 col-md-4 d-flex flex-column align-items-center">
+               <h5 class="text-uppercase">Länkar</h5>
+               <div class="col d-flex flex-column">
+                  <a class="btn btn-secondary btn-lg mt-2"> Boka Bord </a>
+                  <a
+                     href="/alacarte.html"
+                     class="btn btn-secondary btn-lg mt-2">
+                     Meny
+                  </a>
+                  <a class="btn btn-secondary btn-lg mt-2"> Beställ </a>
+                  <a href="/contact.html" class="btn btn-secondary btn-lg mt-2">
+                     Kontakt
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Copyrights Green Food -->
+      <div class="container-fluid d-flex justify-content-center bg-light">
+         <p>
+            <svg
+               xmlns="http://www.w3.org/2000/svg"
+               width="16"
+               height="16"
+               fill="currentColor"
+               class="bi bi-c-circle"
+               viewBox="0 0 16 16">
+               <path
+                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512" />
+            </svg>
+            Green Food
+         </p>
+      </div>
+      <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>

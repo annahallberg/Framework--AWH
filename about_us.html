@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="sv">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <link
+         rel="stylesheet"
+         href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+      <title>Bootstrap - Om Oss</title>
+   </head>
+   <body>
+      <!-- HEADER WITH NAV -->
+      <header class="d-flex justify-content-center bc-green mb-5">
+         <!-- fluid gör så att diven är 100% at all times -->
+         <div class="container-fluid">
+            <!-- Navbar som ändras till en hamburgermeny(toggler) när sidan blir mindre än 992px, dvs breakingpoint large  -->
+            <nav class="navbar navbar-expand-lg navbar-fill fs-4">
+               <div class="container-fluid justify-content-between">
+                  <!-- När menyn blir en hamburgermeny så döljs företagets logotyp helt och istället läggs namnet till vänster i headern 
+                  och hamburgermenyn till höger-->
+                  <a href="/index.html" class="text-decoration-none">
+                     <!-- d-ld-none står för display large (992px) none vilket gör att när skärmen är över 992px så visas inte förtetagsnamnet -->
+                     <h5
+                        class="p-3 text-white text-uppercase d-lg-none d-flex justify-content-center">
+                        Green Food
+                     </h5></a
+                  >
+                  <!-- Hamburgermenyn som är en knapp -->
+                  <button
+                     class="navbar-toggler navbar-dark border"
+                     type="button"
+                     data-bs-toggle="collapse"
+                     data-bs-target="#navbarNavDropdown"
+                     aria-controls="navbarNavDropdown"
+                     aria-expanded="false"
+                     aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon navbar-dark"></span>
+                  </button>
+                  <!-- Menyn är uppdelad i två delar med logotypen i mitten -->
+                  <div
+                     class="collapse navbar-collapse justify-content-center"
+                     id="navbarNavDropdown">
+                     <ul
+                        class="navbar-nav align-items-center nav nav-underline">
+                        <!-- Alla menyalternativen är i stora bokstäver -->
+                        <li class="nav-item text-uppercase">
+                           <a
+                              class="nav-link text-white font-heading"
+                              aria-current="page"
+                              href="/index.html"
+                              >Hem</a
+                           >
+                        </li>
+                        <li class="nav-item text-uppercase">
+                           <a class="nav-link text-white font-heading" href="#"
+                              >Boka Bord</a
+                           >
+                        </li>
+
+                        <li>
+                           <a
+                              class="navbar-brand m-3 justify-content-center d-none d-lg-block"
+                              href="/index.html">
+                              <!-- bilden har rundade kanter samt 2 i marginal om sig -->
+                              <img
+                                 class="rounded-circle m-2"
+                                 src="/images/logo.webp"
+                                 alt="Logo"
+                                 style="width: 100px" />
+                              <h5 class="mt-2 text-white text-uppercase">
+                                 Green Food
+                              </h5></a
+                           >
+                        </li>
+                        <li class="nav-item text-uppercase">
+                           <a
+                              class="nav-link text-white font-heading"
+                              href="/alacarte.html"
+                              >Meny</a
+                           >
+                        </li>
+                        <!-- Nedan följer manyalternativet som är dropdown samt alternativen i dess undermeny -->
+                        <li class="nav-item dropdown text-uppercase">
+                           <a
+                              class="nav-link dropdown-toggle text-white font-heading"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              Mer info
+                           </a>
+                           <ul class="dropdown-menu fs-4">
+                              <li>
+                                 <a
+                                    class="dropdown-item font-heading text-uppercase"
+                                    href="/events.html"
+                                    >Event</a
+                                 >
+                              </li>
+                              <li>
+                                 <a
+                                    class="dropdown-item font-heading text-uppercase"
+                                    href="/about_us.html"
+                                    >Om Oss
+                                 </a>
+                              </li>
+                              <li>
+                                 <a
+                                    class="dropdown-item font-heading text-uppercase"
+                                    href="/contact.html"
+                                    >Kontakt</a
+                                 >
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <!-- MAIN SECTION -->
+      <!-- Mainen ligger i en container som är uppdelad i 2 rows, row1 är indelad i en stor column, row2 i 2 col -->
+      <main class="p-3 wrapper">
+         <div class="container bg-beige">
+            <div class="row align-items-center">
+               <div class="col d-flex flex-column">
+                  <div
+                     class="container d-flex flex-column align-items-center my-4">
+                     <h2 class="mb-1">Om Oss</h2>
+                     <img src="/images/underline-about.svg" alt="" />
+                  </div>
+                  <!-- MX-LG-5 talar om för paragraferna att styckenas X-axel(horisontellt) ska få 5 i marginal på
+                skärmar större än 992px, vilket är breakingpointen för large(lg) -->
+                  <p class="mx-lg-5 fs-5">
+                     Restaurangen Green Food har en inspirerande historia som
+                     börjar med oss, två passionerade entreprenörer, Sara och
+                     David. Vår vision var att skapa en restaurang som inte bara
+                     erbjuder utsökt mat, utan är också dedikerad till
+                     hållbarhet och miljömedvetenhet.
+                  </p>
+                  <p class="mx-lg-5 fs-5">
+                     Vi båda med bakgrund inom gastronomin, delade en djup
+                     övertygelse om att förändra matindustrin till det bättre.
+                     Vi var länge oroade över de negativa miljökonsekvenserna av
+                     den moderna matproduktionen och konsumtionen. Med en
+                     brinnande önskan att göra skillnad beslöt vi oss för att
+                     starta Green Food.
+                  </p>
+                  <p class="mx-lg-5 fs-5">
+                     Vi använder oss av lokalproducerade råvaror för att
+                     minimera vår klimatpåverkan och framförallt stödja våra
+                     lokala bönder.
+                  </p>
+                  <p class="mx-lg-5 fs-5">
+                     Vi arbetar med en grupp passionerade kockar och kreativa
+                     matkonstnärer för att skapa en varierad och spännande meny
+                     med målet att tilltala såväl vegetarianer som köttätare -
+                     med möjlighet att anpassa alla rätter för allergiker.
+                  </p>
+                  <p class="mx-lg-5 fs-5">
+                     Green Food är ett utmärkt exempel på hur en idé och en
+                     passion kan omvandlas till en verksamhet som har en positiv
+                     inverkan på samhället och planeten. Vi, Sara och David,
+                     tillsammans med vårt dedikerade team, har inte bara skapat
+                     en restaurang, utan en rörelse som inspirerar och en
+                     upplevelse för livet.
+                  </p>
+                  <div
+                     class="container d-flex flex-column align-items-center my-4">
+                     <h3>Välkommen till oss!</h3>
+                     <img src="/images/underline-welcome.svg" alt="" />
+                  </div>
+               </div>
+            </div>
+            <!-- Bilderna följer med mainen och minskas. För att sidan ska kännas lite levande har jag varlt att behålla bilderna även på små skärmar -->
+            <div class="row align-items-center bg-beige pb-2">
+               <div class="col my-xl-5 d-flex justify-content-center">
+                  <img
+                     src="/images/cooking2.webp"
+                     alt="Kocken Sara arrangerar en maträtt på flera tallrik"
+                     class="img-fluid" />
+               </div>
+
+               <div class="col my-xl-5 d-flex justify-content-center">
+                  <img
+                     src="/images/cooking.webp"
+                     alt="Kocken David arrangerar en maträtt på en tallrik"
+                     class="img-fluid" />
+               </div>
+            </div>
+         </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer
+         class="container-fluid mt-5 bg-light pt-5 pb-4 d-flex align-self-center">
+         <div class="row flex-fill">
+            <!-- col 1 -->
+            <div
+               class="col-sm-3 col-md-4 d-flex flex-column align-items-center mb-4">
+               <h5 class="text-uppercase">
+                  <a
+                     class="link-opacity-50-hover link-dark text-decoration-none"
+                     href="#"
+                     >Kontakt</a
+                  >
+               </h5>
+               <div class="align-items-center">
+                  <!-- För skärmar mindre än 576px(breakingpoint small) så döljs adressen för att minska
+                sidans längd samt scrollningen för mindre skärmar -->
+                  <address class="d-none d-sm-block">
+                     <p class="mb-0">Green Food</p>
+                     <p class="mb-0">Storgatan 007</p>
+                     <p class="mb-0">876 54</p>
+                     <p>Staden</p>
+                  </address>
+                  <address>
+                     <a href="#">info@greenfood.se</a>
+                  </address>
+                  <address><a href="#"> 007-007 07 07</a></address>
+               </div>
+            </div>
+            <!-- col 2 -->
+            <div
+               class="col-sm-3 col-md-4 d-flex flex-column align-items-center mb-4">
+               <h5 class="text-uppercase d-none d-sm-block">Följ Oss</h5>
+               <div class="col">
+                  <a href="">
+                     <img src="/images/Instagramlogo.svg" alt="Instagram"
+                  /></a>
+                  <a href="">
+                     <img src="/images/Facebooklogo.svg" alt="Facebook" />
+                  </a>
+               </div>
+            </div>
+            <!-- col 3 -->
+            <div
+               class="col-sm-6 col-md-4 d-flex flex-column align-items-center">
+               <h5 class="text-uppercase">Länkar</h5>
+               <div class="col d-flex flex-column">
+                  <a class="btn btn-secondary btn-lg mt-2"> Boka Bord </a>
+                  <a
+                     href="/alacarte.html"
+                     class="btn btn-secondary btn-lg mt-2">
+                     Meny
+                  </a>
+                  <a class="btn btn-secondary btn-lg mt-2"> Beställ </a>
+                  <a href="/contact.html" class="btn btn-secondary btn-lg mt-2">
+                     Kontakt
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Copyrights Green Food -->
+      <div class="container-fluid d-flex justify-content-center bg-light">
+         <p>
+            <svg
+               xmlns="http://www.w3.org/2000/svg"
+               width="16"
+               height="16"
+               fill="currentColor"
+               class="bi bi-c-circle"
+               viewBox="0 0 16 16">
+               <path
+                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512" />
+            </svg>
+            Green Food
+         </p>
+      </div>
+      <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>

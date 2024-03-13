@@ -1,0 +1,42 @@
+@font-face {
+   font-family: "Abhaya Libre";
+   src: url(fonts/abhayalibre.woff) format("woff"),
+      url(fonts/abhayalibre.woff2) format("woff2");
+}
+
+@font-face {
+   font-family: "Abril Fatface";
+   src: url(fonts/abrilfatface.woff) format("woff"),
+      url(fonts/abrilfatface.woff2) format("woff2");
+}
+
+*,
+button {
+   font-family: "Abhaya Libre", serif;
+}
+
+h2,
+h3,
+h5,
+h6,
+h5 > a,
+.font-heading {
+   font-family: "Abril Fatface", serif;
+}
+
+body {
+   background-color: #fffdfa;
+}
+
+.navbar {
+   background-color: #305140;
+}
+
+.bg-beige {
+   background-color: #e2d5c2;
+}
+
+.campaigns:hover {
+   transform: scale(1.05);
+   cursor: pointer;
+}

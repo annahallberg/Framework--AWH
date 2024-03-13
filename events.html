@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <link
+         rel="stylesheet"
+         href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+      <title>Bootstrap - Event</title>
+   </head>
+   <body>
+      <div class="alert alert-primary mb-1" role="alert">
+         Hej hallå, har du hittat hit? Det här är en alert-ruta!
+      </div>
+      <!-- HEADER WITH NAV -->
+      <header class="d-flex justify-content-center bc-green mb-5">
+         <!-- fluid gör så att diven är 100% at all times -->
+         <div class="container-fluid">
+            <!-- Navbar som ändras till en hamburgermeny(toggler) när sidan blir mindre än 992px, dvs breakingpoint large  -->
+            <nav class="navbar navbar-expand-lg navbar-fill fs-4">
+               <div class="container-fluid justify-content-between">
+                  <!-- När menyn blir en hamburgermeny så döljs företagets logotyp helt och istället läggs namnet till vänster i headern 
+                  och hamburgermenyn till höger-->
+                  <a href="/index.html" class="text-decoration-none">
+                     <!-- d-ld-none står för display large (992px) none vilket gör att när skärmen är över 992px så visas inte förtetagsnamnet -->
+                     <h5
+                        class="p-3 text-white text-uppercase d-lg-none d-flex justify-content-center">
+                        Green Food
+                     </h5></a
+                  >
+                  <!-- Hamburgermenyn som är en knapp -->
+                  <button
+                     class="navbar-toggler navbar-dark border"
+                     type="button"
+                     data-bs-toggle="collapse"
+                     data-bs-target="#navbarNavDropdown"
+                     aria-controls="navbarNavDropdown"
+                     aria-expanded="false"
+                     aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon navbar-dark"></span>
+                  </button>
+                  <!-- Menyn är uppdelad i två delar med logotypen i mitten -->
+                  <div
+                     class="collapse navbar-collapse justify-content-center"
+                     id="navbarNavDropdown">
+                     <ul
+                        class="navbar-nav align-items-center nav nav-underline">
+                        <!-- Alla menyalternativen är i stora bokstäver -->
+                        <li class="nav-item text-uppercase">
+                           <a
+                              class="nav-link text-white font-heading"
+                              aria-current="page"
+                              href="/index.html"
+                              >Hem</a
+                           >
+                        </li>
+                        <li class="nav-item text-uppercase">
+                           <a class="nav-link text-white font-heading" href="#"
+                              >Boka Bord</a
+                           >
+                        </li>
+
+                        <li>
+                           <a
+                              class="navbar-brand m-3 justify-content-center d-none d-lg-block"
+                              href="/index.html">
+                              <!-- bilden har rundade kanter samt 2 i marginal om sig -->
+                              <img
+                                 class="rounded-circle m-2"
+                                 src="/images/logo.webp"
+                                 alt="Logo"
+                                 style="width: 100px" />
+                              <h5 class="mt-2 text-white text-uppercase">
+                                 Green Food
+                              </h5></a
+                           >
+                        </li>
+                        <li class="nav-item text-uppercase">
+                           <a
+                              class="nav-link text-white font-heading"
+                              href="/alacarte.html"
+                              >Meny</a
+                           >
+                        </li>
+                        <!-- Nedan följer manyalternativet som är dropdown samt alternativen i dess undermeny -->
+                        <li class="nav-item dropdown text-uppercase">
+                           <a
+                              class="nav-link dropdown-toggle text-white font-heading"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              Mer info
+                           </a>
+                           <ul class="dropdown-menu fs-4">
+                              <li>
+                                 <a
+                                    class="dropdown-item font-heading text-uppercase active active-green"
+                                    href="/events.html"
+                                    >Event</a
+                                 >
+                              </li>
+                              <li>
+                                 <a
+                                    class="dropdown-item font-heading text-uppercase"
+                                    href="/about_us.html"
+                                    >Om Oss
+                                 </a>
+                              </li>
+                              <li>
+                                 <a
+                                    class="dropdown-item font-heading text-uppercase"
+                                    href="/contact.html"
+                                    >Kontakt</a
+                                 >
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <div class="row">
+         <div class="col">
+            <nav aria-label="breadcrumb bg-light">
+               <ol
+                  class="breadcrumb fs-5 d-flex justify-content-center align-items-center">
+                  <li class="breadcrumb-item">
+                     <a
+                        href="/index.html"
+                        class="text-decoration-none text-dark"
+                        >Hem</a
+                     >
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                     Events
+                  </li>
+               </ol>
+            </nav>
+         </div>
+      </div>
+      <main class="bg-beige py-4">
+         <!-- MAIN SECTION -->
+         <div class="container">
+            <!-- Slide -->
+            <div id="carouselExampleCaptions" class="carousel slide">
+               <div class="carousel-indicators">
+                  <button
+                     type="button"
+                     data-bs-target="#carouselExampleCaptions"
+                     data-bs-slide-to="0"
+                     class="active"
+                     aria-current="true"
+                     aria-label="Slide 1"></button>
+                  <button
+                     type="button"
+                     data-bs-target="#carouselExampleCaptions"
+                     data-bs-slide-to="1"
+                     aria-label="Slide 2"></button>
+                  <button
+                     type="button"
+                     data-bs-target="#carouselExampleCaptions"
+                     data-bs-slide-to="2"
+                     aria-label="Slide 3"></button>
+               </div>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <img
+                        src="/images/event1.webp"
+                        class="d-block w-100"
+                        alt="..." />
+                     <div class="carousel-caption d-none d-md-block">
+                        <h5>Stickcafé, torsdagar 14:00</h5>
+                        <p>
+                           Kom till oss och sticka i gemenskap, torsdagar
+                           klockan 14 drar vi igång!
+                        </p>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <img
+                        src="/images/event2.webp"
+                        class="d-block w-100"
+                        alt="..." />
+                     <div class="carousel-caption d-none d-md-block">
+                        <h5>Brasses Blås 24/5</h5>
+                        <p>
+                           Ett kärt återseende av Brasses Blås som bjuder på
+                           storbandsjazz och gamla klassiker i ny tappning. Boka
+                           biljetterna här.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <img
+                        src="/images/event3.webp"
+                        class="d-block w-100"
+                        alt="..." />
+                     <div class="carousel-caption d-none d-md-block">
+                        <h5>Latest hits-lördag 28/4</h5>
+                        <p>
+                           Uppskattade latest hits-lördag är tillbaka, vi syns
+                           där!
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev">
+                  <span
+                     class="carousel-control-prev-icon"
+                     aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+               </button>
+               <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next">
+                  <span
+                     class="carousel-control-next-icon"
+                     aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+               </button>
+            </div>
+            <!-- Table -->
+            <div class="row mt-5 px-3">
+               <table class="table table-striped">
+                  <thead>
+                     <tr class="fs-5">
+                        <th scope="col">Datum</th>
+                        <th scope="col">Event</th>
+                        <th scope="col">Tid</th>
+                        <th scope="col">Biljetter</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr class="fs-5">
+                        <th scope="row ">1/4</th>
+                        <td>Dj Markey Ronson</td>
+                        <td>19:00</td>
+                        <td><a href="#">Tickets.com</a></td>
+                     </tr>
+                     <tr class="fs-5">
+                        <th scope="row">2/5</th>
+                        <td>Brasses Blås</td>
+                        <td>20:30</td>
+                        <td><a href="#">Biljetter.com</a></td>
+                     </tr>
+                     <tr class="fs-5">
+                        <th scope="row">3/6</th>
+                        <td>Laney & the Birds</td>
+                        <td>20:00</td>
+                        <td><a href="#">Events.com</a></td>
+                     </tr>
+                     <tr class="fs-5">
+                        <th scope="row">4/7</th>
+                        <td>Ture har mått bättre</td>
+                        <td>19:30</td>
+                        <td><a href="#">Ticketao.com</a></td>
+                     </tr>
+                  </tbody>
+               </table>
+               <div class="container fs-4 d-flex flex-column p-4">
+                  <p class="text-center mb-0">
+                     Har ni frågor angående eventen eller vill boka bord? Ni
+                     hittar våra kontaktuppgifter här:
+                  </p>
+                  <a
+                     href="/contact.html"
+                     class="knapp btn btn-secondary btn-lg w-lg-30 mx-auto">
+                     Kontakt
+                  </a>
+               </div>
+            </div>
+         </div>
+      </main>
+      <!-- FOOTER -->
+      <!-- footern sträcker sig över hela sidan.  -->
+      <footer
+         class="container-fluid mt-5 bg-light pt-5 pb-4 d-flex align-self-center">
+         <div class="row flex-fill">
+            <!-- col 1 -->
+            <!-- de 3 sektionerna ligger i en lodrät rad på större skärmar och på mindre skärmar som en kolumn -->
+            <div
+               class="col-sm-3 col-md-4 d-flex flex-column align-items-center mb-4">
+               <h5 class="text-uppercase">
+                  <a
+                     class="link-opacity-50-hover link-dark text-decoration-none"
+                     href="#"
+                     >Kontakt</a
+                  >
+               </h5>
+               <div class="align-items-center">
+                  <!-- För skärmar mindre än 576px(breakingpoint small) så döljs adressen för att minska
+                  sidans längd samt scrollningen för mindre skärmar -->
+                  <address class="d-none d-sm-block">
+                     <p class="mb-0">Green Food</p>
+                     <p class="mb-0">Storgatan 007</p>
+                     <p class="mb-0">876 54</p>
+                     <p>Staden</p>
+                  </address>
+                  <address>
+                     <a href="#">info@greenfood.se</a>
+                  </address>
+                  <address><a href="#"> 007-007 07 07</a></address>
+               </div>
+            </div>
+            <!-- col 2 -->
+            <!-- på små skärmar tas rubriken Följ Oss bort då ikonerna är självförklarande på tex mobiltelefoner -->
+            <div
+               class="col-sm-3 col-md-4 d-flex flex-column align-items-center mb-4">
+               <h5 class="text-uppercase d-none d-sm-block">Följ Oss</h5>
+               <div class="col">
+                  <a href="">
+                     <img src="/images/Instagramlogo.svg" alt="Instagram"
+                  /></a>
+                  <a href="">
+                     <img src="/images/Facebooklogo.svg" alt="Facebook" />
+                  </a>
+               </div>
+            </div>
+            <!-- col 3 -->
+            <!-- Sekundär meny -->
+            <!-- Alla länkarna är knappar, för att de ska vara fungerande länkar så liggre de i a-taggar och sen är deras role och classer
+            satta till button, btn och btn-secondary som talar om att de ska se ut som knappar -->
+            <div
+               class="col-sm-6 col-md-4 d-flex flex-column align-items-center">
+               <h5 class="text-uppercase">Länkar</h5>
+               <div class="col d-flex flex-column">
+                  <a class="btn btn-secondary btn-lg mt-2"> Boka Bord </a>
+                  <a
+                     href="/alacarte.html"
+                     class="btn btn-secondary btn-lg mt-2">
+                     Meny
+                  </a>
+                  <a class="btn btn-secondary btn-lg mt-2"> Beställ </a>
+                  <a href="/contact.html" class="btn btn-secondary btn-lg mt-2">
+                     Kontakt
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Copyrights Green Food -->
+      <div class="container-fluid d-flex justify-content-center bg-light">
+         <p>
+            <!-- Här länkar jag in en ikon från bootstraps hemsida -->
+            <svg
+               xmlns="http://www.w3.org/2000/svg"
+               width="16"
+               height="16"
+               fill="currentColor"
+               class="bi bi-c-circle"
+               viewBox="0 0 16 16">
+               <path
+                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512" />
+            </svg>
+            Green Food
+         </p>
+      </div>
+      <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>
